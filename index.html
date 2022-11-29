@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toogle Button</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+    <div class="hero">
+<nav>
+   <div> <img src="logo.png" alt="" width="40px" height="50px"></div>
+<ul>
+<li><a href="" >Home</a></li>
+<li><a href="" >About</a></li>
+<li><a href="" >Contact</a></li>
+<li><a href="" >More</a></li>
+
+</ul>
+<div><img src="icon/moon.png" width="30px" height="30px" id="icon" ></div>
+
+</nav>
+
+<div class="main">
+<h1>I'm <span style="color:orangered;">Prince</span></h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Perferendis, assumenda.</p>
+<button>Download CV</button>
+
+</div>
+
+<div class="images">
+    <img src="circle.png" alt="" width="200px" height="200px" class="img2">
+    <img src="circle.png" alt="" width="150px" height="150px" class="img1">
+ </div>
+
+    </div>
+
+    <script>
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+document.body.classList.toggle("dark-theme");
+
+if(document.body.classList.contains("dark-theme")){
+    icon.src = "icon/sun.png";
+}
+else{
+    icon.src = "icon/moon.png";
+}
+}
+
+    </script>
+</body>
+</html>
